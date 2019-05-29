@@ -3,13 +3,19 @@ body {
     background: url('https://vignette.wikia.nocookie.net/seinfeld/images/5/50/Wiki-background/revision/latest?cb=20130314190005') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
     -o-background-size: cover;
 }
 
 .container {
-    background-color: white;
-    width: 65%;
+    background-color: seashell;
+    width: 60%;
     margin: 0 auto;
     padding: 25px;
+    border: 2px solid black;
+}
+
+.video-container iframe {
+    width: 80%;
+    height: 400px;
 }
