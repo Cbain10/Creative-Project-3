@@ -8,24 +8,21 @@
 </head>
 <body>
 
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
     <div class="container">
+        <!--<a class="navbar-brand" href="#">Start Bootstrap</a>-->
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">-->
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profiles.html">Profiles</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html">Quotes (Current)</a>
-                </li>
-            </ul>
+            <div class="nav-bar">
+                <button><a href="index.html">Home</a></button>
+                <button><a href="profiles.html">Profiles</a></button>
+                <button><a href="quotes.html">Quotes</a></button>
+                <img src="logo.png">
+            </div>
         </div>
     </div>
 </nav>
@@ -36,7 +33,7 @@
 
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
-            <h1 class="font-weight-light">Seinfeld Quote Generator!!!</h1>
+            <h1 class="font-weight-light">Quote Generator!</h1>
             <p class="lead">All the best quotes and moments from the show about nothing.</p>
             <button v-on:click="seinfeld">Get a Random Quote</button>
             <div v-if="loading">
@@ -55,12 +52,27 @@
                 </center>
             </div>
 
+            <!--<h3>Add a Comment</h3>-->
+            <!--<form v-on:submit.prevent="addComment">-->
+                <!--<input v-model="addedName" placeholder="Name"></p>-->
+                <!--<textarea v-model="addedComment"></textarea>-->
+                <!--<br />-->
+                <!--<button type="submit">Comment</button>-->
+            <!--</form>-->
+            <!--<h3>Comments</h3>-->
+            <!--<div v-for="comment in comments">-->
+                <!--<hr>-->
+                <!--<p>{{comments.text}}</p>-->
+                <!--<p><i>{{comments.author}}</i> on {{comments.time}}</p>-->
+            <!--</div>-->
+
             <div style="height: 200px"></div>
             <p class="lead mb-0">Thanks, here is the link to the API</p>
         </div>
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="https://unpkg.com/vue-star-rating/dist/star-rating.min.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
