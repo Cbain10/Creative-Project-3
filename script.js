@@ -16,9 +16,11 @@ let app = new Vue ({
             average: 0
         },
         addedName: '',
+        name: '',
+        comment: '',
         addedComment: '',
-        comments: {
-        },
+        // comments: {
+        // },
         loading: true
     },
     methods: {
@@ -39,13 +41,15 @@ let app = new Vue ({
         //     this.ratings[this.current].average = this.ratings[this.current].sum / this.ratings[this.current].total;
         // },
         addComment() {
-            if (!(this.number in this.comments))
-                Vue.set(app.comments, this.number, new Array);
-            this.comments.push({
-                author: this.addedName,
-                text: this.addedComment,
-                time: moment().format('LLLL'),
-            });
+            // if (!(this.number in this.comments))
+            //     Vue.set(app.comments, this.number, new Array);
+            // this.comments.push({
+            //     author: this.addedName,
+            //     text: this.addedComment,
+            //     time: moment().format('LLLL'),
+            // });
+            this.name = this.addedName;
+            this.comment = this.addedComment;
             this.addedName = '';
             this.addedComment = '';
             // this.comments.name = this.addedName;

@@ -16,22 +16,12 @@
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profiles.html">Profiles (Current)</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="quotes.html">Quotes</a>
-                </li>
-                <!--<li class="nav-item">-->
-                    <!--<a class="nav-link" href="#">Contact</a>-->
-                <!--</li>-->
-            </ul>
+            <div class="nav-bar">
+                <button class="button"><span><a href="index.html">Home</a></span></button>
+                <button class="button"><span><a href="profiles.html">Profiles</a></span></button>
+                <button class="button"><span><a href="quotes.html">Quotes</a></span></button>
+                <img src="logo.png">
+            </div>
         </div>
     </div>
 </nav>
@@ -41,6 +31,15 @@
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5">
             <h1 class="font-weight-light">PROFILES</h1>
+            <div class="profile-buttons">
+                <center>
+                    <button class="button"><span><a href="jerry.html" style="color:white">Jerry</a></span></button>
+                    <button class="button"><span><a href="george.html" style="color:white">George</a></span></button>
+                    <button class="button"><span><a href="elaine.html" style="color:white">Elaine</a></span></button>
+                    <button class="button"><span><a href="kramer.html" style="color:white">Kramer</a></span></button>
+                </center>
+            </div>
+
             <!--<p class="lead">All the best quotes and moments from the show about nothing.</p>-->
             <!--<button v-on:click="seinfeld">Get a Random Quote</button>-->
             <!--<div v-if="loading">-->

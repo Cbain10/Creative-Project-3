@@ -18,9 +18,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <div class="nav-bar">
-                <button><a href="index.html">Home</a></button>
-                <button><a href="profiles.html">Profiles</a></button>
-                <button><a href="quotes.html">Quotes</a></button>
+                <button class="button"><span><a href="index.html">Home</a></span></button>
+                <button class="button"><span><a href="profiles.html">Profiles</a></span></button>
+                <button class="button"><span><a href="quotes.html">Quotes</a></span></button>
                 <img src="logo.png">
             </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="card-body p-5">
             <h1 class="font-weight-light">Quote Generator!</h1>
             <p class="lead">All the best quotes and moments from the show about nothing.</p>
-            <button v-on:click="seinfeld">Get a Random Quote</button>
+            <button class="button" v-on:click="seinfeld"><span>Get a Random Quote!</span></button>
             <div v-if="loading">
                 <p>Loading...</p>
             </div>
@@ -62,12 +62,13 @@
             <!--<h3>Comments</h3>-->
             <!--<div v-for="comment in comments">-->
                 <!--<hr>-->
-                <!--<p>{{comments.text}}</p>-->
-                <!--<p><i>{{comments.author}}</i> on {{comments.time}}</p>-->
+                <!--<p>{{comment}}</p>-->
+                <!--<p><i>{{name}}</i></p>-->
             <!--</div>-->
 
             <div style="height: 200px"></div>
-            <p class="lead mb-0">Thanks, here is the link to the API</p>
+            <p class="lead mb-0">Thanks for visiting our site!!<br><br>Here is the <a href="https://seinfeld-quotes.herokuapp.com/quotes">link</a> to the Seinfeld API!</p>
+            <p>Copyright Christian Bain 2019</p>
         </div>
     </div>
 </div>
